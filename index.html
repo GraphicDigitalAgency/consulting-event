@@ -7,73 +7,31 @@
     <body>
         
         <script>
-            $(function () { 
-                var myChart =Highcharts.chart('container', {
-
-                                                            title: {
-                                                                text: 'Highcharts Sankey Diagram'
-                                                            },
-
-                                                            series: [{
-                                                                keys: ['from', 'to', 'weight'],
-                                                                data: [
-                                                                    ['CEO','Futurecasting',1],
-                                                                    ['Researcher','Connected culture',1],
-                                                                    ['Managing Director','Pushing into retail',1],
-                                                                    ['CEO','Futurecasting',1],
-                                                                    ['Analyst','Connected culture',1],
-                                                                    ['Manager','Organisational capability',1],
-                                                                    ['Analyst','Pushing into retail',1],
-                                                                    ['Analyst','Futurecasting',1],
-                                                                    ['Manager','Connected culture',1],
-                                                                    ['Marketing Director','Futurecasting',1],
-                                                                    ['Researcher','Futurecasting',1],
-                                                                    ['Manager','Organisational capability',1],
-                                                                    ['Manager','Connected culture',1],
-                                                                    ['Manager','Futurecasting',1],
-                                                                    ['Analyst','Futurecasting',1],
-                                                                    ['Manager','Connected culture',1],
-                                                                    ['CEO','Connected culture',1],
-                                                                    ['Researcher','Pushing into retail',1],
-                                                                    ['Managing Director','Pushing into retail',1],
-                                                                    ['Managing Director','Connected culture',1],
-                                                                    ['Analyst','Organisational capability',1],
-                                                                    ['Researcher','Organisational capability',1],
-                                                                    ['CEO','Futurecasting',1],
-                                                                    ['Analyst','Pushing into retail',1],
-                                                                    ['Analyst','Futurecasting',1],
-                                                                    ['CEO','Pushing into retail',1],
-                                                                    ['Analyst','Organisational capability',1],
-                                                                    ['Managing Director','Futurecasting',1],
-                                                                    ['Analyst','Organisational capability',1],
-                                                                    ['Marketing Director','Connected culture',1],
-                                                                    ['Managing Director','Pushing into retail',1],
-                                                                    ['CEO','Futurecasting',1],
-                                                                    ['Researcher','Connected culture',1],
-                                                                    ['Researcher','Organisational capability',1],
-                                                                    ['Marketing Director','Pushing into retail',1],
-                                                                    ['Marketing Director','Futurecasting',1],
-                                                                    ['Marketing Director','Organisational capability',1],
-                                                                    ['Managing Director','Connected culture',1],
-                                                                    ['Manager','Pushing into retail',1],
-                                                                    ['CEO','Organisational capability',1],
-                                                                    ['CEO','Pushing into retail',1],
-                                                                    ['Marketing Director','Pushing into retail',1],
-                                                                    ['Managing Director','Connected culture',1],
-                                                                    ['Marketing Director','Futurecasting',1],
-                                                                    ['CEO','Futurecasting',1],
-                                                                    ['Marketing Director','Organisational capability',1],
-                                                                    ['CEO','Connected culture',1],
-                                                                    ['Managing Director','Connected culture',1],
-                                                                    ['Marketing Director','Organisational capability',1]
-                                                                ],
-                                                                type: 'sankey',
-                                                                name: 'Sankey demo series'
-                                                            }]
-
-                                                        });
-            });
-
+           $(function () { 
+                        var myChart = Highcharts.chart('container', {
+                            chart: {
+                                type: 'bar'
+                            },
+                            title: {
+                                text: 'Fruit Consumption'
+                            },
+                            xAxis: {
+                                categories: ['Apples', 'Bananas', 'Oranges']
+                            },
+                            yAxis: {
+                                title: {
+                                    text: 'Fruit eaten'
+                                }
+                            },
+                            series: [{
+                                name: 'Jane',
+                                data: [1, 0, 4]
+                            }, {
+                                name: 'John',
+                                data: [5, 7, 3]
+                            }]
+                        });
+                    });
         </script>
         
         <style>
