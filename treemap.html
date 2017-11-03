@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/treemap.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script type="text/javascript">
+            $(function () { 
+                            Highcharts.chart('container', {
+                                series: [{
+                                    type: "treemap",
+                                    layoutAlgorithm: 'stripes',
+                                    alternateStartingDirection: true,
+                                    levels: [{
+                                        level: 1,
+                                        layoutAlgorithm: 'sliceAndDice',
+                                        dataLabels: {
+                                            enabled: true,
+                                            align: 'left',
+                                            verticalAlign: 'top',
+                                            style: {
+                                                fontSize: '15px',
+                                                fontWeight: 'bold'
+                                            }
+                                        }
+                                    }],
+                                    data: [{
+                                        id: 'A',
+                                        name: 'Futurecasting',
+                                        color: "#00E8EA"
+                                    }, {
+                                        id: 'B',
+                                        name: 'Connected culture',
+                                        color: "#009C9D"
+                                    }, {
+                                        id: 'C',
+                                        name: 'Pushing into retail',
+                                        color: '#00696A'
+                                    }, {
+                                        id: 'D',
+                                        name: 'Organisational capability',
+                                        color: '#003637'
+                                    }, {
+                                        name: 'CEO',
+                                        parent: 'A',
+                                        value: 5
+                                    }, {
+                                        name: 'Researcher',
+                                        parent: 'A',
+                                        value: 3
+                                    }, {
+                                        name: 'Managing Director',
+                                        parent: 'A',
+                                        value: 4
+                                    }, {
+                                        name: 'Manager',
+                                        parent: 'A',
+                                        value: 4
+                                    }, {
+                                        name: 'Analyst',
+                                        parent: 'A',
+                                        value: 10
+                                    }, {
+                                        name: 'Marketing Director',
+                                        parent: 'A',
+                                        value: 1
+                                    }, {
+                                        name: 'CEO',
+                                        parent: 'B',
+                                        value: 1
+                                    }, {
+                                        name: 'Researcher',
+                                        parent: 'B',
+                                        value: 5
+                                    }, {
+                                        name: 'Managing Director',
+                                        parent: 'B',
+                                        value: 3
+                                    }, {
+                                        name: 'Manager',
+                                        parent: 'B',
+                                        value: 3
+                                    }, {
+                                        name: 'Analyst',
+                                        parent: 'B',
+                                        value: 2
+                                    }, {
+                                        name: 'Marketing Director',
+                                        parent: 'B',
+                                        value: 7
+                                    }, {
+                                        name: 'CEO',
+                                        parent: 'C',
+                                        value: 7
+                                    }, {
+                                        name: 'Researcher',
+                                        parent: 'C',
+                                        value: 3
+                                    }, {
+                                        name: 'Managing Director',
+                                        parent: 'C',
+                                        value: 2
+                                    }, {
+                                        name: 'Manager',
+                                        parent: 'C',
+                                        value: 1
+                                    }, {
+                                        name: 'Analyst',
+                                        parent: 'C',
+                                        value: 1
+                                    }, {
+                                        name: 'Marketing Director',
+                                        parent: 'C',
+                                        value: 3
+                                    }, {
+                                        name: 'CEO',
+                                        parent: 'D',
+                                        value: 6
+                                    }, {
+                                        name: 'Researcher',
+                                        parent: 'D',
+                                        value: 4
+                                    }, {
+                                        name: 'Managing Director',
+                                        parent: 'D',
+                                        value: 8
+                                    }, {
+                                        name: 'Manager',
+                                        parent: 'D',
+                                        value: 7
+                                    }, {
+                                        name: 'Analyst',
+                                        parent: 'D',
+                                        value: 4
+                                    }, {
+                                        name: 'Marketing Director',
+                                        parent: 'D',
+                                        value: 3
+                                    }]
+                                }],
+                                title: {
+                                    text: 'Voting'
+                                }
+                            });
+                        });
+        </script>
+        <style>
+        #container {
+          min-width: 300px;
+          max-width: 800px;
+          height: 400px;
+          margin: 1em auto;
+          border: 1px solid silver;
+        }
+        </style>
+	</head>
+	<body>
+		<div id="container" style="width:100%; height:400px;"></div>
+	</body>
+</html>
